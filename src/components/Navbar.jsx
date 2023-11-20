@@ -35,7 +35,8 @@ function Navbar() {
           }}
         >
           <img src={logo} alt="logo" className="nav-logo" />
-          <p>Portfolio</p>
+          &nbsp;
+          <p> Portfolio</p>
         </Link>
 
         <div className="menu-icon" onClick={() => setToggle(!toggle)}>
