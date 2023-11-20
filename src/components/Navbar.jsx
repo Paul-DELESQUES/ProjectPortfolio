@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { navLinks } from "../constants/dataGen";
+import { Bio, navLinks } from "../constants/dataGen";
 import { logo, menu, close } from "../assets";
 import "../styles/Navbar.scss";
 
@@ -52,6 +52,14 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        <a
+          className="github-btn"
+          href={Bio.github}
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub Profile
+        </a>
       </div>
     </nav>
   );

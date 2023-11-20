@@ -29,9 +29,9 @@ export const navLinks = [
 export const Bio = {
   name: "Paul Delesques",
   roles: [
-    "Junior Frontend Developer",
-    "Junior Backend Developer",
-    "UI/UX Designer beginner",
+    "Developpeur Frontend Junior",
+    "Developpeur Backend Junior",
+    "UI/UX Designer débutant",
   ],
   description: `Je suis un développeur de logiciels débutant en JavaScript, j'utilise
     les frameworks tels que React, Node.js et Three.js. Je suis un apprenant
@@ -39,32 +39,14 @@ export const Bio = {
     conviviales qui résolvent des problèmes concrets. Travaillons ensemble
     pour donner vie à vos idées ! et codons avec passions !
   `,
-  github: "https://github.com/https://github.com/Paul-DELESQUES",
-  resume: "mettre mon cv sur drive",
+  github: "https://github.com/Paul-DELESQUES",
+  resume:
+    "https://drive.google.com/file/d/1YdieIkRn_M_vFArVEkd97BUarOMiT48M/view?usp=sharing",
   linkedin: "www.linkedin.com/in/paul-delesques-dev34",
   // twitter: "https://twitter.com/RishavChanda",
   // insta: "https://www.instagram.com/rishav_chanda/",
   // facebook: "https://www.facebook.com/rishav.chanda.165/",
 };
-
-// const services = [
-//   {
-//     title: "Web Developer Junior",
-//     icon: web,
-//   },
-//   {
-//     title: "React Developer Junior",
-//     icon: mobile,
-//   },
-//   {
-//     title: "Frontend Developer Junior",
-//     icon: front,
-//   },
-//   {
-//     title: "Backend Developer Junior",
-//     icon: backend,
-//   },
-// ];
 
 export const technologies = [
   {
@@ -109,61 +91,6 @@ export const technologies = [
     icon: blender,
   },
 ];
-
-//   const experiences = [
-//     {
-//       title: "React.js Developer",
-//       company_name: "Starbucks",
-//       icon: starbucks,
-//       iconBg: "#383E56",
-//       date: "March 2020 - April 2021",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "React Native Developer",
-//       company_name: "Tesla",
-//       icon: tesla,
-//       iconBg: "#E6DEDD",
-//       date: "Jan 2021 - Feb 2022",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "Web Developer",
-//       company_name: "Shopify",
-//       icon: shopify,
-//       iconBg: "#383E56",
-//       date: "Jan 2022 - Jan 2023",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "Full stack Developer",
-//       company_name: "Meta",
-//       icon: meta,
-//       iconBg: "#E6DEDD",
-//       date: "Jan 2023 - Present",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//   ];
 
 export const projects = [
   {
