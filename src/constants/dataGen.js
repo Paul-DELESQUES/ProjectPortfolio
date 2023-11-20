@@ -26,6 +26,27 @@ export const navLinks = [
   },
 ];
 
+export const Bio = {
+  name: "Paul Delesques",
+  roles: [
+    "Junior Frontend Developer",
+    "Junior Backend Developer",
+    "UI/UX Designer beginner",
+  ],
+  description: `Je suis un développeur de logiciels débutant en JavaScript, j'utilise
+    les frameworks tels que React, Node.js et Three.js. Je suis un apprenant
+    rapide et j'aime créer des solutions efficaces, évolutives et
+    conviviales qui résolvent des problèmes concrets. Travaillons ensemble
+    pour donner vie à vos idées ! et codons avec passions !
+  `,
+  github: "https://github.com/https://github.com/Paul-DELESQUES",
+  resume: "mettre mon cv sur drive",
+  linkedin: "www.linkedin.com/in/paul-delesques-dev34",
+  // twitter: "https://twitter.com/RishavChanda",
+  // insta: "https://www.instagram.com/rishav_chanda/",
+  // facebook: "https://www.facebook.com/rishav.chanda.165/",
+};
+
 // const services = [
 //   {
 //     title: "Web Developer Junior",
