@@ -16,9 +16,9 @@ function App() {
       <div className="App">
         <About />
         <Skills />
-        <Experience />
         <Projects />
         <Contact />
+        <Experience />
       </div>
     </BrowserRouter>
   );
