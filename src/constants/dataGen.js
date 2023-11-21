@@ -7,6 +7,7 @@ import {
   github,
   html,
   javascript,
+  loading,
   nodejs,
   portfolio,
   reactjs,
@@ -180,7 +181,7 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "logo",
+    image: loading,
     source_code_link: "https://github.com/Paul-DELESQUES",
   },
 ];

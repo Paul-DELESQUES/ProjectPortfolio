@@ -9,6 +9,7 @@ import git from "./git.png";
 import github from "./github.png";
 import html from "./html.png";
 import javascript from "./javascript.png";
+import loading from "./projects/loading.png";
 import logo from "./logo.svg";
 import menu from "./menu.svg";
 import nodejs from "./nodejs.png";
@@ -28,6 +29,7 @@ export {
   github,
   html,
   javascript,
+  loading,
   logo,
   menu,
   nodejs,
