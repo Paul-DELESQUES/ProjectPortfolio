@@ -2,11 +2,13 @@ import {
   blender,
   css,
   figma,
+  geodrinkers,
   git,
   github,
   html,
   javascript,
   nodejs,
+  portfolio,
   reactjs,
   threejs,
 } from "../assets";
@@ -117,46 +119,48 @@ export const skills = [
 
 export const projects = [
   {
-    name: "Projet 1",
+    name: "Geodrinkers",
     description: "mettre une description",
     // "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "tech1",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "tech2",
+        name: "scss",
         color: "green-text-gradient",
       },
       {
-        name: "tech3",
+        name: "threeJS",
         color: "pink-text-gradient",
       },
     ],
-    image: "logo",
+    image: geodrinkers,
     source_code_link: "https://github.com/Paul-DELESQUES",
+    web_deployment: "https://geodrinkers.vercel.app/",
   },
   {
-    name: "Projet 2",
+    name: "Portfolio",
     description: "mettre une description",
     // "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "tech1",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "tech2",
+        name: "scss",
         color: "green-text-gradient",
       },
       {
-        name: "tech3",
+        name: "threeJS",
         color: "pink-text-gradient",
       },
     ],
-    image: "logo",
+    image: portfolio,
     source_code_link: "https://github.com/Paul-DELESQUES",
+    web_deployment: "versel",
   },
   {
     name: "Projet 3",

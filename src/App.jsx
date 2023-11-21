@@ -1,12 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Navbar,
-  Projects,
-  Skills,
-} from "./components";
+import { About, Contact, Navbar, Projects, Skills } from "./components";
 import "./styles/App.scss";
 
 function App() {
@@ -18,7 +11,6 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
-        <Experience />
       </div>
     </BrowserRouter>
   );

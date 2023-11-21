@@ -4,6 +4,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants/dataGen";
 import { fadeIn, textVariant } from "../utils/motion";
+import PropTypes from "prop-types";
 import "../styles/Projects.scss";
 
 const ProjectCard = ({
@@ -13,11 +14,15 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_deployment,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="tilt-ctn">
-        <div className="card-ctn">
+        <div
+          className="card-ctn"
+          onClick={() => window.open(web_deployment, "_blank")}
+        >
           <img src={image} alt="project-image" className="img-card" />
           <div className="card-2">
             <div
@@ -69,5 +74,15 @@ function Projects() {
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
+  web_deployment: PropTypes.string.isRequired,
+};
 
 export default SectionWrapper(Projects, "projects");
