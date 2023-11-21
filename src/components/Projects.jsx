@@ -80,7 +80,7 @@ ProjectCard.propTypes = {
   index: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.object).isRequired,
   image: PropTypes.string.isRequired,
   source_code_link: PropTypes.string.isRequired,
   web_deployment: PropTypes.string.isRequired,

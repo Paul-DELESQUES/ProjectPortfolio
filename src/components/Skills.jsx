@@ -1,8 +1,11 @@
 import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import { skills } from "../constants/dataGen";
 import "../styles/Skills.scss";
+import SectionWrapper from "../hoc/SectionWrapper";
 
-const Skills = () => {
+const Skills = ({ index }) => {
   return (
     <div className="container" id="skills">
       <div className="wrapper">
@@ -10,7 +13,11 @@ const Skills = () => {
         <div className="desc">
           Voici les techs avec lesquelles je travaille :
         </div>
-        <div className="skills-container">
+
+        <motion.div
+          variants={fadeIn("right", "spring", index * 2, 2)}
+          className="skills-container"
+        >
           {skills.map((skill) => (
             <Tilt
               options={{ max: 45, scale: 1, speed: 450 }}
@@ -32,10 +39,10 @@ const Skills = () => {
               </div>
             </Tilt>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default SectionWrapper(Skills, "skills");
