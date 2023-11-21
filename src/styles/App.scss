@@ -12,7 +12,12 @@
   background: $bg-img;
   background-size: cover;
   color: $text-primary;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+}
+
+.canvas-app-ctn {
+  position: relative;
+  z-index: 0;
 }
