@@ -124,15 +124,15 @@ export const projects = [
     // "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "threeJS",
         color: "blue-text-gradient",
       },
       {
-        name: "scss",
+        name: "react",
         color: "green-text-gradient",
       },
       {
-        name: "threeJS",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
@@ -159,7 +159,7 @@ export const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/Paul-DELESQUES",
+    source_code_link: "https://github.com/Paul-DELESQUES/ProjectPortfolio",
     web_deployment: "versel",
   },
   {

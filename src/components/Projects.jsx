@@ -60,9 +60,9 @@ function Projects() {
         <motion.p variants={fadeIn("", "", 0.1, 1)} className="cards-motion-p">
           Les projets suivants mettent en avant mes compétences à travers des
           exemples concrets. Chaque projet est brièvement décrit avec des liens
-          Github pour voir le code et les démonstrations en direct. Cela reflète
-          ma capacité à résoudre des problèmes, à travailler avec différentes
-          technologies et à gérer des projets.
+          Github pour voir le code et des liens sur l'image pour visualiser le
+          déploiement. Cela reflète ma capacité à résoudre des problèmes, à
+          travailler avec différentes technologies et à gérer des projets.
         </motion.p>
       </div>
 
