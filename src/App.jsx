@@ -1,5 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Navbar, Projects, Skills } from "./components";
+import {
+  About,
+  Contact,
+  Navbar,
+  Projects,
+  Skills,
+  StarsCanvas,
+} from "./components";
 import "./styles/App.scss";
 
 function App() {
@@ -10,7 +17,10 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Contact />
+        <div className="canvas-app-ctn">
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   );
