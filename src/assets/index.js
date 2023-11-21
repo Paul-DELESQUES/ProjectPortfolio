@@ -1,4 +1,5 @@
 import avatar from "./avatar.png";
+import bg from "./bg.png";
 import blender from "./blender2.png";
 import close from "./close.svg";
 import css from "./css.png";
@@ -16,6 +17,7 @@ import threejs from "./threejs.svg";
 export {
   avatar,
   blender,
+  bg,
   close,
   css,
   figma,
