@@ -5,10 +5,11 @@
   align-items: center;
   width: 100%;
   padding: 1rem 0;
-  background-color: transparent;
-  position: fixed;
+  background-color: $bg-tertiary;
+  position: absolute;
   top: 0px;
   z-index: 20;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 
   .nav-ctn {
     display: flex;
