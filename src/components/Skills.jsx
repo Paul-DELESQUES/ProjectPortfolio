@@ -1,3 +1,4 @@
+import { Tilt } from "react-tilt";
 import { skills } from "../constants/dataGen";
 import "../styles/Skills.scss";
 
@@ -11,7 +12,11 @@ const Skills = () => {
         </div>
         <div className="skills-container">
           {skills.map((skill) => (
-            <div className="skill" key={skill.title}>
+            <Tilt
+              options={{ max: 45, scale: 1, speed: 450 }}
+              className="skill"
+              key={skill.title}
+            >
               <div className="skill-title">{skill.title}</div>
               <div className="skill-list">
                 {skill.skills.map((item) => (
@@ -25,7 +30,7 @@ const Skills = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </Tilt>
           ))}
         </div>
       </div>
