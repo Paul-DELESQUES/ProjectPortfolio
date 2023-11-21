@@ -30,8 +30,7 @@ function Navbar() {
           to="/"
           className="nav-link"
           onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
+            window.sco(0, 0);
           }}
         >
           <img src={logo} alt="logo" className="nav-logo" />
