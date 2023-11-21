@@ -13,11 +13,14 @@ import {
 
 export const navLinks = [
   {
+    id: "home",
+  },
+  {
     id: "skills",
     title: "Skills",
   },
   {
-    id: "Projects",
+    id: "projects",
     title: "Projects",
   },
   {
@@ -28,16 +31,12 @@ export const navLinks = [
 
 export const Bio = {
   name: "Paul Delesques",
-  roles: [
-    "Developpeur Frontend Junior",
-    "Developpeur Backend Junior",
-    "UI/UX Designer débutant",
-  ],
-  description: `Je suis un développeur de logiciels débutant en JavaScript, j'utilise
+  roles: ["Developpeur Frontend ", "Developpeur Backend ", "UI/UX Designer "],
+  description: `Je suis un développeur Web et Web Mobile débutant en JavaScript, j'utilise
     les frameworks tels que React, Node.js et Three.js. Je suis un apprenant
     rapide et j'aime créer des solutions efficaces, évolutives et
     conviviales qui résolvent des problèmes concrets. Travaillons ensemble
-    pour donner vie à vos idées ! et codons avec passions !
+    ! et codons avec passions !
   `,
   github: "https://github.com/Paul-DELESQUES",
   resume:
@@ -48,47 +47,71 @@ export const Bio = {
   // facebook: "https://www.facebook.com/rishav.chanda.165/",
 };
 
-export const technologies = [
+export const skills = [
   {
-    name: "HTML 5",
-    icon: html,
+    title: "Frontend",
+    skills: [
+      {
+        id: 1,
+        name: "HTML 5",
+        icon: html,
+      },
+      {
+        id: 2,
+        name: "CSS 3",
+        icon: css,
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        icon: javascript,
+      },
+      {
+        id: 4,
+        name: "React JS",
+        icon: reactjs,
+      },
+      {
+        id: 5,
+        name: "Three JS",
+        icon: threejs,
+      },
+    ],
   },
   {
-    name: "CSS 3",
-    icon: css,
+    title: "Backend",
+    skills: [
+      {
+        id: 6,
+        name: "Node JS",
+        icon: nodejs,
+      },
+    ],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Github",
-    icon: github,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Blender",
-    icon: blender,
+    title: "Others",
+    skills: [
+      {
+        id: 7,
+        name: "Github",
+        icon: github,
+      },
+      {
+        id: 8,
+        name: "git",
+        icon: git,
+      },
+      {
+        id: 9,
+        name: "figma",
+        icon: figma,
+      },
+      {
+        id: 10,
+        name: "Blender",
+        icon: blender,
+      },
+    ],
   },
 ];
 
