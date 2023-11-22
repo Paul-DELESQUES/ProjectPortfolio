@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+.contact-ctn {
+  width: 80%;
+}
+.card-contact-ctn {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: transparent;
+  gap: 2.5rem;
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+  @media (min-width: 1280px) {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+}
+
+.motion-contact-ctn {
+  flex: 0.6;
+  padding: 2rem;
+  border-radius: 1rem;
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
+.form-contact-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.label-contact-ctn {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-contact-ctn {
+  color: $text-primary;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.input-contact-ctn {
+  background-color: $bg-quadra;
+  padding: 1rem 1.5rem;
+  ::placeholder {
+    color: $text-secondary;
+  }
+  color: $text-primary;
+  border-radius: 0.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-style: none;
+  font-weight: 500;
+  resize: none;
+}
+
+.button-contact-ctn {
+  background-color: $bg-quadra;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  width: fit-content;
+  color: $text-primary;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #050816;
+  --tw-shadow: var(--tw-shadow-colored);
+}
