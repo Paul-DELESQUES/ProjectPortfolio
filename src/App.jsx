@@ -8,12 +8,15 @@ import {
   StarsCanvas,
 } from "./components";
 import "./styles/App.scss";
+import { useTheme } from "./contexts/ThemeContext";
 
 function App() {
+  const { generateThemeClasses } = useTheme();
+
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="App">
+      <div className={`App ${generateThemeClasses()}`}>
         <About />
         <Skills />
         <Projects />
