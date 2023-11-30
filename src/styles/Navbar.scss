@@ -1,0 +1,177 @@
+@import "variables.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  background-color: $bg-tertiary-light;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+
+  .nav-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    text-decoration: none;
+    img {
+      margin-left: 2rem;
+      max-width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .nav-item {
+    height: 80px;
+
+    a {
+      display: flex;
+      border-radius: 0.5rem;
+      text-align: center;
+      justify-content: end;
+      padding: 0.2rem 1.5rem;
+      margin-top: 1.3rem;
+      list-style: none;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: $text-primary-light;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-secondary-light;
+        background: $bg-secondary-light;
+        box-shadow: 2px 2px 20px $box-shadow-color-light,
+          -2px -2px 20px $box-shadow-color-light;
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    &.dark-theme {
+      a {
+        color: $text-primary;
+
+        &:hover {
+          color: $text-secondary;
+          background: $bg-secondary;
+          box-shadow: 2px 2px 20px $box-shadow-color,
+            -2px -2px 20px $box-shadow-color;
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .github-btn {
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid $secondary-color-light;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: $primary-color-light;
+
+    &:hover {
+      color: $text-secondary-light;
+      border: none;
+      background: $bg-secondary-light;
+      box-shadow: 2px 2px 20px $box-shadow-color-light,
+        -2px -2px 20px $box-shadow-color-light;
+      transform: scale(1.05);
+      transition: all 0.4s ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 18px;
+    }
+  }
+  &.dark-theme {
+    background-color: $bg-tertiary;
+    .github-btn {
+      border: 2px solid $secondary-color;
+      color: $primary-color;
+
+      &:hover {
+        border: none;
+        color: $text-secondary;
+        background: $bg-secondary;
+        box-shadow: 2px 2px 20px $box-shadow-color,
+          -2px -2px 20px $box-shadow-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 3.8rem;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    padding: 0;
+    background: $bg;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item {
+    a {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      font-size: 2rem;
+      transform: translate(0%, -250%);
+    }
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
