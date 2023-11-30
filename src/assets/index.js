@@ -11,6 +11,7 @@ import html from "./html.png";
 import javascript from "./javascript.png";
 import loading from "./projects/loading.png";
 import logo from "./logo.svg";
+import logoLight from "./logo-light.svg";
 import menu from "./menu.svg";
 import nodejs from "./nodejs.png";
 import portfolio from "./projects/portfolio.png";
@@ -31,6 +32,7 @@ export {
   javascript,
   loading,
   logo,
+  logoLight,
   menu,
   nodejs,
   portfolio,
