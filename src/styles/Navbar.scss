@@ -6,7 +6,7 @@
   width: 100%;
   height: auto;
   padding: 0.5rem 0;
-  background-color: $bg-tertiary;
+  background-color: $bg-tertiary-light;
   position: absolute;
   top: 0px;
   z-index: 20;
@@ -61,16 +61,29 @@
       list-style: none;
       text-decoration: none;
       font-size: 1.1rem;
-      color: $text-primary;
+      color: $text-primary-light;
       cursor: pointer;
 
       &:hover {
-        color: $text-secondary;
-        background: $bg-secondary;
-        box-shadow: 2px 2px 20px $box-shadow-color,
-          -2px -2px 20px $box-shadow-color;
+        color: $text-secondary-light;
+        background: $bg-secondary-light;
+        box-shadow: 2px 2px 20px $box-shadow-color-light,
+          -2px -2px 20px $box-shadow-color-light;
         transform: scale(1.05);
         transition: all 0.4s ease-in-out;
+      }
+    }
+
+    &.dark-theme {
+      a {
+        color: $text-primary;
+
+        &:hover {
+          color: $text-secondary;
+          background: $bg-secondary;
+          box-shadow: 2px 2px 20px $box-shadow-color,
+            -2px -2px 20px $box-shadow-color;
+        }
       }
     }
   }
@@ -82,27 +95,42 @@
   .github-btn {
     text-decoration: none;
     list-style: none;
-    border: 2px solid $secondary-color;
+    border: 2px solid $secondary-color-light;
     border-radius: 0.5rem;
     margin-bottom: 0.4rem;
     padding: 0.2rem 1.5rem;
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
-    color: $primary-color;
+    color: $primary-color-light;
 
     &:hover {
-      color: $text-secondary;
+      color: $text-secondary-light;
       border: none;
-      background: $bg-secondary;
-      box-shadow: 2px 2px 20px $box-shadow-color,
-        -2px -2px 20px $box-shadow-color;
+      background: $bg-secondary-light;
+      box-shadow: 2px 2px 20px $box-shadow-color-light,
+        -2px -2px 20px $box-shadow-color-light;
       transform: scale(1.05);
       transition: all 0.4s ease-in-out;
     }
 
     @media (max-width: 640px) {
       font-size: 18px;
+    }
+  }
+  &.dark-theme {
+    background-color: $bg-tertiary;
+    .github-btn {
+      border: 2px solid $secondary-color;
+      color: $primary-color;
+
+      &:hover {
+        border: none;
+        color: $text-secondary;
+        background: $bg-secondary;
+        box-shadow: 2px 2px 20px $box-shadow-color,
+          -2px -2px 20px $box-shadow-color;
+      }
     }
   }
 }

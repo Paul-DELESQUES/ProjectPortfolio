@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Bio, navLinks } from "../constants/dataGen";
 import { logo, logoLight, menu, close } from "../assets";
+import { useTheme } from "../contexts/ThemeContext";
 import "../styles/Navbar.scss";
 
 function Navbar() {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const { isDarkMode, generateThemeClasses } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${generateThemeClasses()}`}>
       <div className="nav-ctn">
         <Link
           to="/"
@@ -33,7 +33,11 @@ function Navbar() {
             window.sco(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="nav-logo" />
+          <img
+            src={isDarkMode ? logo : logoLight}
+            alt="logo"
+            className="nav-logo"
+          />
         </Link>
 
         <div className="menu-icon" onClick={() => setToggle(!toggle)}>
@@ -43,7 +47,7 @@ function Navbar() {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className="nav-item"
+              className={`nav-item ${generateThemeClasses()}`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -51,7 +55,7 @@ function Navbar() {
           ))}
         </ul>
         <a
-          className="github-btn"
+          className={`github-btn ${generateThemeClasses()}`}
           href={Bio.github}
           target="_blank"
           rel="noreferrer"

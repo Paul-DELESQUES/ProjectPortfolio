@@ -9,11 +9,14 @@
 }
 
 .App {
-  background: $bg-quadra;
+  background: $bg-quadra-light;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  &.dark-theme {
+    background: $bg-quadra;
+  }
 }
 
 .canvas-app-ctn {
