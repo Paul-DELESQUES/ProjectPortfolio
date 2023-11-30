@@ -39,18 +39,18 @@
 }
 
 .span-contact-ctn {
-  color: $text-primary;
+  color: $card;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .input-contact-ctn {
-  background-color: $bg-quadra;
+  background-color: $card;
   padding: 1rem 1.5rem;
   ::placeholder {
-    color: $text-secondary;
+    color: $primary-color;
   }
-  color: $text-primary;
+  color: $primary-color;
   border-radius: 0.5rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -60,17 +60,13 @@
 }
 
 .button-contact-ctn {
-  background-color: $bg-quadra;
+  background-color: $card;
   padding: 0.75rem 2rem;
   border-radius: 0.75rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
   width: fit-content;
-  color: $text-primary;
+  color: $primary-color;
   cursor: pointer;
   font-weight: 700;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #050816;
-  --tw-shadow: var(--tw-shadow-colored);
 }

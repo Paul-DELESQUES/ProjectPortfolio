@@ -65,24 +65,10 @@
       cursor: pointer;
 
       &:hover {
-        color: #f5f5dc;
-        background: hsla(210, 100%, 25%, 1);
-        background: linear-gradient(
-          225deg,
-          hsla(210, 100%, 25%, 1) 0%,
-          hsla(210, 100%, 75%, 1) 140%
-        );
-        background: -moz-linear-gradient(
-          225deg,
-          hsla(210, 100%, 25%, 1) 0%,
-          hsla(210, 100%, 75%, 1) 140%
-        );
-        background: -webkit-linear-gradient(
-          225deg,
-          hsla(210, 100%, 25%, 1) 0%,
-          hsla(210, 100%, 75%, 1) 140%
-        );
-        box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+        color: $text-secondary;
+        background: $bg-secondary;
+        box-shadow: 2px 2px 20px $box-shadow-color,
+          -2px -2px 20px $box-shadow-color;
         transform: scale(1.05);
         transition: all 0.4s ease-in-out;
       }
@@ -96,35 +82,21 @@
   .github-btn {
     text-decoration: none;
     list-style: none;
-    border: 2px solid #072776;
-    border-radius: 0.8rem;
+    border: 2px solid $secondary-color;
+    border-radius: 0.5rem;
     margin-bottom: 0.4rem;
     padding: 0.2rem 1.5rem;
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
-    color: #1b57b1;
+    color: $primary-color;
 
     &:hover {
-      color: #f5f5dc;
-      background: hsla(210, 100%, 25%, 1);
-      background: linear-gradient(
-        225deg,
-        hsla(210, 100%, 25%, 1) 0%,
-        hsla(210, 100%, 75%, 1) 140%
-      );
-      background: -moz-linear-gradient(
-        225deg,
-        hsla(210, 100%, 25%, 1) 0%,
-        hsla(210, 100%, 75%, 1) 140%
-      );
-      background: -webkit-linear-gradient(
-        225deg,
-        hsla(210, 100%, 25%, 1) 0%,
-        hsla(210, 100%, 75%, 1) 140%
-      );
-
-      box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+      color: $text-secondary;
+      border: none;
+      background: $bg-secondary;
+      box-shadow: 2px 2px 20px $box-shadow-color,
+        -2px -2px 20px $box-shadow-color;
       transform: scale(1.05);
       transition: all 0.4s ease-in-out;
     }
@@ -149,7 +121,7 @@
   }
   .nav-menu.active {
     padding: 0;
-    background: #242222;
+    background: $bg;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

@@ -2,6 +2,8 @@
 
 .proj-ctn-global {
   display: flex;
+  background: $bg-img;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -9,10 +11,10 @@
   height: 100vh;
 }
 .tilt-ctn {
-  background-color: antiquewhite;
-  opacity: 80%;
-  border: 1px solid #1b57b1;
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1b57b1;
+  background-color: $card;
+  opacity: 90%;
+  border: 1px solid $primary-color;
+  box-shadow: 2px 2px 40px $primary-color, -2px -2px 20px $primary-color;
   padding: 1.25rem;
   border-radius: 1rem;
   width: 100%;
@@ -85,7 +87,7 @@
   position: relative;
   right: 300%;
   font-size: 14px;
-  color: $text-secondary;
+  color: $text-primary;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   @media screen and (min-width: 640px) {
@@ -118,7 +120,7 @@
   position: relative;
   left: 20.5%;
   margin-top: 0.75rem;
-  color: $text-secondary;
+  color: $text-primary;
   font-size: 17px;
   max-width: 48rem;
   line-height: 30px;

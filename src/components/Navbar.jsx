@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Bio, navLinks } from "../constants/dataGen";
-import { logo, menu, close } from "../assets";
+import { logo, logoLight, menu, close } from "../assets";
 import "../styles/Navbar.scss";
 
 function Navbar() {
