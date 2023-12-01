@@ -4,6 +4,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants/dataGen";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useTheme } from "../contexts/ThemeContext";
 import PropTypes from "prop-types";
 import "../styles/Projects.scss";
 
@@ -16,9 +17,14 @@ const ProjectCard = ({
   source_code_link,
   web_deployment,
 }) => {
+  const { isDarkMode, generateThemeClasses } = useTheme();
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="tilt-ctn">
+      <Tilt
+        options={{ max: 45, scale: 1, speed: 450 }}
+        className={`tilt-ctn ${generateThemeClasses()}`}
+      >
         <div
           className="card-ctn"
           onClick={() => window.open(web_deployment, "_blank")}
@@ -33,12 +39,12 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="card-4">
+        <div className={`card-4 ${generateThemeClasses()}`}>
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
 
-        <div className="card-5">
+        <div className={`card-5 ${generateThemeClasses()}`}>
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`}>#{tag.name}</p>
           ))}
@@ -49,15 +55,21 @@ const ProjectCard = ({
 };
 
 function Projects() {
+  const { generateThemeClasses } = useTheme();
+
   return (
-    <div className="proj-ctn-global" id="projects">
+    <div className={`proj-ctn-global ${generateThemeClasses()}`} id="projects">
       <motion.div variants={textVariant()}>
-        <p className="cards-ctn-title">My work</p>
-        <h2 className="cards-ctn-title2">Projets.</h2>
+        <h2 className={`cards-ctn-title ${generateThemeClasses()}`}>
+          Projets.
+        </h2>
       </motion.div>
 
       <div className="cards-ctn">
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="cards-motion-p">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className={`cards-motion-p ${generateThemeClasses()}`}
+        >
           Les projets suivants mettent en avant mes compétences à travers des
           exemples concrets. Chaque projet est brièvement décrit avec des liens
           Github pour avoir accès au code et des liens sur les images pour
@@ -69,7 +81,7 @@ function Projects() {
 
       <div className="card-6">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={project.name} index={index} {...project} />
         ))}
       </div>
     </div>

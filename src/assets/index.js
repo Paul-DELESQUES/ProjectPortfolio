@@ -15,6 +15,7 @@ import logoLight from "./logo-light.svg";
 import menu from "./menu.svg";
 import nodejs from "./nodejs.png";
 import portfolio from "./projects/portfolio.png";
+import portfolioLight from "./projects/portfolio-light.png";
 import reactjs from "./reactjs.png";
 import threejs from "./threejs.svg";
 
@@ -36,6 +37,7 @@ export {
   menu,
   nodejs,
   portfolio,
+  portfolioLight,
   reactjs,
   threejs,
 };
