@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { useTheme } from "../contexts/ThemeContext";
 import "../styles/Contact.scss";
 
 function Contact() {
@@ -12,6 +13,7 @@ function Contact() {
     email: "",
     message: "",
   });
+  const { generateThemeClasses } = useTheme();
 
   const [loading, setLoading] = useState(false);
 
@@ -110,7 +112,10 @@ function Contact() {
               />
             </label>
 
-            <button type="submit" className="button-contact-ctn">
+            <button
+              type="submit"
+              className={`button-contact-ctn ${generateThemeClasses()}`}
+            >
               {loading ? "En cours d'envoi..." : "Envoyer"}
             </button>
           </form>

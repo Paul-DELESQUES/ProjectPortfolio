@@ -2,24 +2,33 @@
 
 .proj-ctn-global {
   display: flex;
-  background: $bg-img;
+  background: $bg-tertiary-light;
   background-size: cover;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  &.dark-theme {
+    background: $bg-img;
+  }
 }
 .tilt-ctn {
-  background-color: $card;
+  background: $bg-secondary-light;
   opacity: 90%;
-  border: 1px solid $primary-color;
-  box-shadow: 2px 2px 40px $primary-color, -2px -2px 20px $primary-color;
+  box-shadow: 2px 2px 20px $text-primary-light,
+    -2px -2px 20px $text-primary-light;
   padding: 1.25rem;
   border-radius: 1rem;
   width: 100%;
+  height: 440px;
   @media screen and (min-width: 640px) {
     width: 360px;
+  }
+  &.dark-theme {
+    background: $card;
+    border: 1px solid $primary-color;
+    box-shadow: 2px 2px 40px $primary-color, -2px -2px 20px $primary-color;
   }
 }
 
@@ -64,14 +73,22 @@
 .card-4 {
   margin-top: 1.25rem;
   h3 {
-    color: $primary-color;
+    color: $text-secondary-light;
     font-weight: 700;
     font-size: 24px;
   }
   p {
     margin-top: 0.5rem;
-    color: $button;
+    color: $text-secondary-light;
     font-size: 14px;
+  }
+  &.dark-theme {
+    h3 {
+      color: $primary-color;
+    }
+    p {
+      color: $primary-color;
+    }
   }
 }
 
@@ -81,26 +98,22 @@
   justify-content: start;
   flex-wrap: wrap;
   gap: 0.5rem;
-  color: $primary-color;
-}
-.cards-ctn-title {
-  position: relative;
-  right: 300%;
-  font-size: 14px;
-  color: $text-primary;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  @media screen and (min-width: 640px) {
-    font-size: 18px;
+  color: $text-primary-light;
+  &.dark-theme {
+    color: $primary-color;
   }
 }
 
-.cards-ctn-title2 {
+.cards-ctn-title {
   position: relative;
   right: 300%;
-  color: $text-primary;
-  font-weight: 900;
+  color: $text-primary-light;
+  font-weight: 800;
   font-size: 30px;
+  &.dark-theme {
+    color: $text-primary;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 60px;
   }
@@ -120,10 +133,13 @@
   position: relative;
   left: 20.5%;
   margin-top: 0.75rem;
-  color: $text-primary;
+  color: $text-primary-light;
   font-size: 17px;
   max-width: 48rem;
   line-height: 30px;
+  &.dark-theme {
+    color: $text-primary;
+  }
 }
 
 .card-6 {
