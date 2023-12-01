@@ -2,15 +2,18 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { skills } from "../constants/dataGen";
-import "../styles/Skills.scss";
+import { useTheme } from "../contexts/ThemeContext";
 import SectionWrapper from "../hoc/SectionWrapper";
+import "../styles/Skills.scss";
 
 const Skills = ({ index }) => {
+  const { generateThemeClasses } = useTheme();
+
   return (
-    <div className="container" id="skills">
+    <div className={`container ${generateThemeClasses()}`} id="skills">
       <div className="wrapper">
-        <div className="title">Skills</div>
-        <div className="desc">
+        <div className={`title ${generateThemeClasses()}`}>Skills</div>
+        <div className={`desc ${generateThemeClasses()}`}>
           Voici les techs avec lesquelles je travaille :
         </div>
 
@@ -21,7 +24,7 @@ const Skills = ({ index }) => {
           {skills.map((skill) => (
             <Tilt
               options={{ max: 45, scale: 1, speed: 450 }}
-              className="skill"
+              className={`skill ${generateThemeClasses()}`}
               key={skill.title}
             >
               <div className="skill-title">{skill.title}</div>

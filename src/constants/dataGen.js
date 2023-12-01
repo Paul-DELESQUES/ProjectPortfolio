@@ -10,6 +10,7 @@ import {
   loading,
   nodejs,
   portfolio,
+  portfolioLight,
   reactjs,
   threejs,
 } from "../assets";
@@ -86,7 +87,7 @@ export const skills = [
     skills: [
       {
         id: 6,
-        name: "Node JS",
+        name: "ExpressJS",
         icon: nodejs,
       },
     ],
@@ -121,8 +122,8 @@ export const skills = [
 export const projects = [
   {
     name: "Geodrinkers",
-    description: "mettre une description",
-    // "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    description:
+      "Voici un projet qui m'a été confié, pendant ma formation de développeur web et web mobile.",
     tags: [
       {
         name: "threeJS",
@@ -143,8 +144,9 @@ export const projects = [
   },
   {
     name: "Portfolio",
-    description: "mettre une description",
-    // "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    description:
+      "Voici mon portfolio, qui m'a permis d'acquérir des notions supplémentaires et d'utiliser des méthodes différentes.",
+
     tags: [
       {
         name: "react",
@@ -165,8 +167,8 @@ export const projects = [
   },
   {
     name: "Projet 3",
-    description: "mettre une description",
-    // "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    description:
+      "Un opticien et une audioprothésiste indépendants m'ont fait confiance pour améliorer le site web de leur magasin  ",
     tags: [
       {
         name: "tech1",
