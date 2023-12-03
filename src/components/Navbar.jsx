@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Bio, navLinks } from "../constants/dataGen";
-import { logo, logoLight, menu, close } from "../assets";
+import { logoLight, menu, close } from "../assets";
 import { useTheme } from "../contexts/ThemeContext";
 import "../styles/Navbar.scss";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-  const { isDarkMode, generateThemeClasses } = useTheme();
+  const { generateThemeClasses } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,11 +33,7 @@ function Navbar() {
             window.sco(0, 0);
           }}
         >
-          <img
-            src={isDarkMode ? logo : logoLight}
-            alt="logo"
-            className="nav-logo"
-          />
+          <img src={logoLight} alt="logo" className="nav-logo" />
         </Link>
 
         <div className="menu-icon" onClick={() => setToggle(!toggle)}>
