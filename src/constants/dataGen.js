@@ -1,6 +1,7 @@
 import {
   blender,
   css,
+  expressjs,
   figma,
   geodrinkers,
   git,
@@ -8,6 +9,7 @@ import {
   html,
   javascript,
   loading,
+  mysql,
   nodejs,
   portfolio,
   reactjs,
@@ -83,8 +85,18 @@ export const skills = [
     skills: [
       {
         id: 6,
-        name: "ExpressJS",
+        name: "NodeJS",
         icon: nodejs,
+      },
+      {
+        id: 11,
+        name: "MySQL",
+        icon: mysql,
+      },
+      {
+        id: 11,
+        name: "ExpressJS",
+        icon: expressjs,
       },
     ],
   },
