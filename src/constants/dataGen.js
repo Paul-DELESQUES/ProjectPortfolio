@@ -44,11 +44,8 @@ export const Bio = {
   `,
   github: "https://github.com/Paul-DELESQUES",
   resume:
-    "https://drive.google.com/file/d/1YdieIkRn_M_vFArVEkd97BUarOMiT48M/view?usp=sharing",
+    "https://drive.google.com/file/d/1IaZs7mZcipiIhQ1x5W9bv5PuxzqGl7rY/view?usp=drive_link",
   linkedin: "www.linkedin.com/in/paul-delesques-dev34",
-  // twitter: "https://twitter.com/RishavChanda",
-  // insta: "https://www.instagram.com/rishav_chanda/",
-  // facebook: "https://www.facebook.com/rishav.chanda.165/",
 };
 
 export const skills = [
