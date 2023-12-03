@@ -3,6 +3,7 @@ import bg from "./bg.png";
 import blender from "./blender2.png";
 import close from "./close.svg";
 import css from "./css.png";
+import expressjs from "./expressjs.png";
 import figma from "./figma.png";
 import geodrinkers from "./projects/geodrinkers.png";
 import git from "./git.png";
@@ -13,6 +14,7 @@ import loading from "./projects/loading.png";
 import logo from "./logo.svg";
 import logoLight from "./logo-light.svg";
 import menu from "./menu.svg";
+import mysql from "./mysql.png";
 import nodejs from "./nodejs.png";
 import portfolio from "./projects/portfolio.png";
 import reactjs from "./reactjs.png";
@@ -24,6 +26,7 @@ export {
   bg,
   close,
   css,
+  expressjs,
   figma,
   geodrinkers,
   git,
@@ -34,6 +37,7 @@ export {
   logo,
   logoLight,
   menu,
+  mysql,
   nodejs,
   portfolio,
   reactjs,
