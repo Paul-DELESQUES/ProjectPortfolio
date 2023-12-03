@@ -5,6 +5,7 @@ import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { useTheme } from "../contexts/ThemeContext";
 import "../styles/Contact.scss";
+import MoonCanvas from "./canvas/Moon";
 
 function Contact() {
   const formRef = useRef();
@@ -121,6 +122,9 @@ function Contact() {
           </form>
         </motion.div>
       </div>
+      <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+        <MoonCanvas />
+      </motion.div>
     </div>
   );
 }
