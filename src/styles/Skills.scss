@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  background: $bg-img-light;
+  background: $bg-tertiary-light;
   background-size: cover;
   flex-direction: column;
   justify-content: center;
@@ -123,7 +123,7 @@
   }
 
   &.dark-theme {
-    background: $bg-img;
+    background: $bg-tertiary;
     .title {
       color: $text-primary;
     }
@@ -135,15 +135,11 @@
         background: $bg-secondary;
         border: 0.1px solid $bg;
         box-shadow: -5px 10px 20px $box-shadow-color,
-          -5px 10px 20px $primary-color;
+          -5px 10px 20px $box-shadow-color;
       }
     }
     .skill-title {
       color: $text-secondary;
-    }
-    .skill-item {
-      color: $text-secondary;
-      border: 1px solid $card;
     }
   }
 }

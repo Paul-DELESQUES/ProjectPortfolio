@@ -10,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   &.dark-theme {
-    background: $bg-img;
+    background: $bg-tertiary;
   }
 }
 .tilt-ctn {
@@ -26,9 +26,10 @@
     width: 360px;
   }
   &.dark-theme {
-    background: $card;
-    border: 1px solid $primary-color;
-    box-shadow: 2px 2px 40px $primary-color, -2px -2px 20px $primary-color;
+    background: $bg-secondary;
+    border: 1px solid $bg;
+    box-shadow: 2px 2px 20px $box-shadow-color-secondary,
+      -2px -2px 20px $box-shadow-color-secondary;
   }
 }
 
@@ -84,10 +85,10 @@
   }
   &.dark-theme {
     h3 {
-      color: $primary-color;
+      color: $text-primary;
     }
     p {
-      color: $primary-color;
+      color: $text-primary;
     }
   }
 }
@@ -100,7 +101,7 @@
   gap: 0.5rem;
   color: $text-primary-light;
   &.dark-theme {
-    color: $primary-color;
+    color: $text-primary;
   }
 }
 
