@@ -10,7 +10,6 @@ import {
   loading,
   nodejs,
   portfolio,
-  portfolioLight,
   reactjs,
   threejs,
 } from "../assets";
