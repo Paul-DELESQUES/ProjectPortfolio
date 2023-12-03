@@ -22,7 +22,9 @@
   padding: 2rem;
   border-radius: 1rem;
   h2 {
+    font-size: 3rem;
     margin-top: 2rem;
+    color: $text-secondary;
   }
 }
 
@@ -78,4 +80,12 @@
     background: $bg-secondary;
     color: $text-secondary;
   }
+}
+
+.moon-ctn {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  bottom: 0%;
+  right: -35%;
 }

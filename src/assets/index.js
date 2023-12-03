@@ -14,6 +14,7 @@ import loading from "./projects/loading.png";
 import logo from "./logo.svg";
 import logoLight from "./logo-light.svg";
 import menu from "./menu.svg";
+import moon from "./moon.jpg";
 import mysql from "./mysql.png";
 import nodejs from "./nodejs.png";
 import portfolio from "./projects/portfolio.png";
@@ -37,6 +38,7 @@ export {
   logo,
   logoLight,
   menu,
+  moon,
   mysql,
   nodejs,
   portfolio,
