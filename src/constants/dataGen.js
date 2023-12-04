@@ -171,7 +171,7 @@ export const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/Paul-DELESQUES/ProjectPortfolio",
-    web_deployment: "versel",
+    web_deployment: "https://portfolio-paul-delesques.netlify.app",
   },
   {
     name: "Projet 3",
