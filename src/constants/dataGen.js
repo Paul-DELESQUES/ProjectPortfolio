@@ -41,7 +41,7 @@ export const Bio = {
     les frameworks tels que React, Node.js et Three.js. Je suis un apprenant
     rapide et j'aime créer des solutions efficaces, évolutives et
     conviviales qui résolvent des problèmes concrets. Travaillons ensemble
-    ! et codons avec passions !
+    et codons avec passions !
   `,
   github: "https://github.com/Paul-DELESQUES",
   resume:

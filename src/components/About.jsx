@@ -4,13 +4,10 @@ import { Bio } from "../constants/dataGen";
 import { avatar } from "../assets";
 import { useTheme } from "../contexts/ThemeContext";
 import "../styles/About.scss";
+import "../styles/AboutCanvas.scss";
 
 function About() {
   const { generateThemeClasses } = useTheme();
-
-  // const handleThemeChange = () => {
-  //   toggleTheme(); // Appel pour changer le thème
-  // };
 
   return (
     <div className={`heroContainer ${generateThemeClasses()}`}>
