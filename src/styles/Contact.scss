@@ -2,90 +2,111 @@
 
 .contact-ctn {
   width: 80%;
-}
-.card-contact-ctn {
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: transparent;
-  gap: 2.5rem;
-  overflow: hidden;
-  width: 60%;
-  margin: auto;
-  @media (min-width: 1280px) {
+  .card-contact-ctn {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    gap: 2.5rem;
+    overflow: hidden;
+    width: 60%;
+    margin: auto;
+    @media (min-width: 1280px) {
+      margin-top: 3rem;
+      flex-direction: row;
+    }
+  }
+
+  .motion-contact-ctn {
+    flex: 0.6;
+    padding: 2rem;
+    border-radius: 1rem;
+    h2 {
+      font-size: 3rem;
+      margin-top: 2rem;
+      color: $text-secondary;
+    }
+  }
+
+  .form-contact-ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 3rem;
-    flex-direction: row;
   }
-}
 
-.motion-contact-ctn {
-  flex: 0.6;
-  padding: 2rem;
-  border-radius: 1rem;
-  h2 {
-    font-size: 3rem;
-    margin-top: 2rem;
-    color: $text-secondary;
+  .label-contact-ctn {
+    display: flex;
+    flex-direction: column;
   }
-}
 
-.form-contact-ctn {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.label-contact-ctn {
-  display: flex;
-  flex-direction: column;
-}
-
-.span-contact-ctn {
-  color: $card;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.input-contact-ctn {
-  background-color: $card;
-  padding: 1rem 1.5rem;
-  ::placeholder {
-    color: $primary-color-light;
+  .span-contact-ctn {
+    color: $card;
+    font-weight: 500;
+    margin-bottom: 1rem;
   }
-  color: $primary-color;
-  border-radius: 0.5rem;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  border-style: none;
-  font-weight: 500;
-  resize: none;
-  &.dark-theme {
+
+  .input-contact-ctn {
+    background-color: $card;
+    padding: 1rem 1.5rem;
     ::placeholder {
-      color: $primary-color;
+      color: $primary-color-light;
+    }
+    color: $primary-color;
+    border-radius: 0.5rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-style: none;
+    font-weight: 500;
+    resize: none;
+    &.dark-theme {
+      ::placeholder {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .button-contact-ctn {
+    background: $bg-secondary-light;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: fit-content;
+    color: $text-secondary-light;
+    cursor: pointer;
+    &.dark-theme {
+      background: $bg-secondary;
+      color: $text-secondary;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    font-size: 3vh;
+    line-height: 4vh;
+    .motion-contact-ctn {
+      width: 100%;
+      padding: 0;
+      h2 {
+        font-size: 5vh;
+        margin-top: 13vh;
+      }
+    }
+    .input-contact-ctn {
+      padding: 1vh 1.5vh;
+    }
+    .form-contact-ctn {
+      margin-top: 4vh;
     }
   }
 }
-
-.button-contact-ctn {
-  background: $bg-secondary-light;
-  padding: 0.75rem 2rem;
-  border-radius: 0.75rem;
-  font-weight: 700;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  width: fit-content;
-  color: $text-secondary-light;
-  cursor: pointer;
-  &.dark-theme {
-    background: $bg-secondary;
-    color: $text-secondary;
-  }
-}
-
 .moon-ctn {
   width: 70vw;
   height: 70vh;
   position: absolute;
   bottom: 0%;
   right: -35%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

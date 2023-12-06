@@ -1,18 +1,5 @@
 @import "variables.scss";
 
-.proj-ctn-global {
-  display: flex;
-  background: $bg-tertiary-light;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  &.dark-theme {
-    background: $bg-tertiary;
-  }
-}
 .tilt-ctn {
   background: $bg-secondary-light;
   opacity: 90%;
@@ -22,7 +9,7 @@
   border-radius: 1rem;
   width: 100%;
   height: 440px;
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 780px) {
     width: 360px;
   }
   &.dark-theme {
@@ -104,48 +91,61 @@
     color: $text-primary;
   }
 }
-
-.cards-ctn-title {
-  position: relative;
-  right: 300%;
-  color: $text-primary-light;
-  font-weight: 800;
-  font-size: 30px;
-  &.dark-theme {
-    color: $text-primary;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 60px;
-  }
-  @media screen and (min-width: 640px) {
-    font-size: 50px;
-  }
-  @media screen and (min-width: 450px) {
-    font-size: 40px;
-  }
-}
-
-.cards-ctn {
+.proj-ctn-global {
   display: flex;
-  width: 100%;
-}
-.cards-motion-p {
-  position: relative;
-  left: 20.5%;
-  margin-top: 0.75rem;
-  color: $text-primary-light;
-  font-size: 17px;
-  max-width: 48rem;
-  line-height: 30px;
+  background: $bg-tertiary-light;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
   &.dark-theme {
-    color: $text-primary;
+    background: $bg-tertiary;
   }
-}
 
-.card-6 {
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.75rem;
+  .cards-ctn-title {
+    position: relative;
+    right: 300%;
+    color: $text-primary-light;
+    font-weight: 800;
+    font-size: 30px;
+    &.dark-theme {
+      color: $text-primary;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 60px;
+    }
+    @media screen and (min-width: 640px) {
+      font-size: 50px;
+    }
+    @media screen and (min-width: 450px) {
+      font-size: 40px;
+    }
+  }
+
+  .cards-ctn {
+    display: flex;
+    width: 100%;
+  }
+  .cards-motion-p {
+    position: relative;
+    left: 20.5%;
+    margin-top: 0.75rem;
+    color: $text-primary-light;
+    font-size: 17px;
+    max-width: 48rem;
+    line-height: 30px;
+    &.dark-theme {
+      color: $text-primary;
+    }
+  }
+
+  .card-6 {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+  }
 }
