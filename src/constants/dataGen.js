@@ -36,7 +36,7 @@ export const navLinks = [
 
 export const Bio = {
   name: "Paul Delesques",
-  roles: ["Developpeur Frontend ", "Developpeur Backend ", "UI/UX Designer "],
+  roles: ["Developpeur Frontend ", "Developpeur Backend ", "UI/UX Designer"],
   description: `Je suis un développeur Web et Web Mobile débutant en JavaScript, j'utilise
     les frameworks tels que React, Node.js et Three.js. Je suis un apprenant
     rapide et j'aime créer des solutions efficaces, évolutives et
