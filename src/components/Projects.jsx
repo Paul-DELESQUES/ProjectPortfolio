@@ -67,7 +67,7 @@ function Projects() {
 
       <div className="cards-ctn">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("right", "spring", 0.1, 1)}
           className={`cards-motion-p ${generateThemeClasses()}`}
         >
           Les projets suivants mettent en avant mes compétences à travers des
