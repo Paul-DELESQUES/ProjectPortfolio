@@ -23,8 +23,8 @@ function Contact() {
     const publicKey = "vsZWmwsShEjxbFNxA";
 
     const templateParams = {
-      form_name: name,
-      form_email: email,
+      from_name: name,
+      from_email: email,
       to_name: "Paul DELESQUES",
       message: message,
     };
