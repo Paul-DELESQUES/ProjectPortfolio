@@ -9,60 +9,40 @@ import MoonCanvas from "./canvas/Moon";
 
 function Contact() {
   const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const { generateThemeClasses } = useTheme();
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
+  const { generateThemeClasses } = useTheme();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+
+    const serviceId = "service_rmb6pwv";
+    const templateId = "template_ug2lguf";
+    const publicKey = "vsZWmwsShEjxbFNxA";
+
+    const templateParams = {
+      form_name: name,
+      form_email: email,
+      to_name: "Paul DELESQUES",
+      message: message,
+    };
 
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Paul DELESQUES",
-          from_email: form.email,
-          to_email: "pdelesques@outlook.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Merci, je vous réponds au plus vite");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ah, quelque chose s'est mal passé. Veuillez réessayer");
-        }
-      );
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then(() => {
+        setLoading(false);
+        alert("Email envoyé avec succès, je vous réponds au plus vite");
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error("Erreur lors de l'envoi:", error);
+        alert("Une erreur s'est produite. Veuillez réessayer");
+      });
   };
 
   return (
@@ -84,8 +64,8 @@ function Contact() {
               <input
                 type="text"
                 name="name"
-                value={form.name}
-                onChange={handleChange}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Quel est votre nom ?"
                 className="input-contact-ctn"
               />
@@ -95,8 +75,8 @@ function Contact() {
               <input
                 type="email"
                 name="email"
-                value={form.email}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Quel est votre email ?"
                 className="input-contact-ctn"
               />
@@ -106,8 +86,8 @@ function Contact() {
               <textarea
                 rows={7}
                 name="message"
-                value={form.message}
-                onChange={handleChange}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Que voulez vous dire ?"
                 className="input-contact-ctn"
               />
