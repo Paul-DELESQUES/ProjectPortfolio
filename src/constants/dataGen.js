@@ -45,7 +45,7 @@ export const Bio = {
   `,
   github: "https://github.com/Paul-DELESQUES",
   resume:
-    "https://drive.google.com/file/d/1IaZs7mZcipiIhQ1x5W9bv5PuxzqGl7rY/view?usp=drive_link",
+    "https://drive.google.com/file/d/1b0WtOb9HCrzWilY8ca9EEXm8SrNkLkhe/view?usp=sharing",
   linkedin: "www.linkedin.com/in/paul-delesques-dev34",
 };
 
