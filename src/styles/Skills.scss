@@ -22,7 +22,7 @@
 
     @media (max-width: 960px) {
       flex-direction: column;
-      height: 100vh;
+      height: 140vh;
     }
 
     .title {
@@ -33,7 +33,8 @@
 
       @media (max-width: 768px) {
         margin-top: 12px;
-        font-size: 32px;
+        font-size: 5vh;
+        line-height: 7vh;
       }
     }
 
@@ -45,7 +46,7 @@
       color: $text-primary-light;
 
       @media (max-width: 768px) {
-        font-size: 16px;
+        font-size: 3vh;
       }
     }
 
@@ -119,6 +120,10 @@
           }
         }
       }
+      @media (max-width: 768px) {
+        padding-bottom: 5vh;
+        margin: 0;
+      }
     }
   }
 
@@ -141,5 +146,8 @@
     .skill-title {
       color: $text-secondary;
     }
+  }
+  @media (max-width: 780px) {
+    height: 140vh;
   }
 }
