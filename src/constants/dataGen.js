@@ -1,6 +1,7 @@
 import {
   blender,
   css,
+  events,
   expressjs,
   figma,
   geodrinkers,
@@ -11,7 +12,6 @@ import {
   loading,
   mysql,
   nodejs,
-  portfolio,
   reactjs,
   threejs,
 } from "../assets";
@@ -151,9 +151,9 @@ export const projects = [
     web_deployment: "https://geodrinkers.vercel.app/",
   },
   {
-    name: "Portfolio",
+    name: "Events Planner",
     description:
-      "Voici mon portfolio, qui m'a permis d'acquérir des notions supplémentaires et d'utiliser des méthodes différentes.",
+      "Lors de mon passage du Titre DWWM à la wild code school, j'ai réalisé un projet qui consistait à créer une application web de gestion d'événements pour un client. ",
 
     tags: [
       {
@@ -169,9 +169,9 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: portfolio,
-    source_code_link: "https://github.com/Paul-DELESQUES/ProjectPortfolio",
-    web_deployment: "https://portfolio-paul-delesques.netlify.app",
+    image: events,
+    source_code_link: "https://github.com/Paul-DELESQUES/EventsPlannerV2",
+    // web_deployment: "",
   },
   {
     name: "Projet 3",

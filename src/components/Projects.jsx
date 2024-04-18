@@ -1,12 +1,12 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants/dataGen";
-import { fadeIn, textVariant } from "../utils/motion";
-import { useTheme } from "../contexts/ThemeContext";
 import PropTypes from "prop-types";
+import { Tilt } from "react-tilt";
+import { github } from "../assets";
+import { projects } from "../constants/dataGen";
+import { useTheme } from "../contexts/ThemeContext";
+import { SectionWrapper } from "../hoc";
 import "../styles/Projects.scss";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -27,7 +27,7 @@ const ProjectCard = ({
       >
         <div
           className="card-ctn"
-          onClick={() => window.open(web_deployment, "_blank")}
+          onClick={() => window.open(source_code_link, "_blank")}
         >
           <img src={image} alt="project-image" className="img-card" />
           <div className="card-2">
