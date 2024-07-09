@@ -45,7 +45,7 @@ export const Bio = {
   `,
   github: "https://github.com/Paul-DELESQUES",
   resume:
-    "https://drive.google.com/file/d/1b0WtOb9HCrzWilY8ca9EEXm8SrNkLkhe/view?usp=sharing",
+    "https://drive.google.com/file/d/1yUsrqnB7e-SVsJenYyz-31x1TE6jFJDp/view?usp=sharing",
   linkedin: "www.linkedin.com/in/paul-delesques-dev34",
 };
 
@@ -165,7 +165,11 @@ export const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "threeJS",
+        name: "expressJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySQL",
         color: "pink-text-gradient",
       },
     ],
